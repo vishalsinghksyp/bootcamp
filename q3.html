@@ -1,0 +1,41 @@
+<!-- INNER HTML -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+
+
+<body style="color: azure;" bgcolor="navy">
+    <p>Difference between
+        InnerHTML and InnerText</p>
+    <p>innerHTML: This property gets or sets the HTML content (including HTML tags) within an element123. It returns the
+        text, including all spacing and inner element tags. It preserves the formatting of the text and all the extra
+        tags like <b>, <i> etc3. Using innerHTML allows you to see exactly what’s in the HTML markup contained within a
+                string, including elements like spacing, line breaks and formatting</p>
+
+
+
+    <div id="myDiv">Hello</div>
+
+    <button onclick="changeContent()">Click to check working of inner html</button>
+
+    <script>
+        function changeContent() {
+            document.getElementById("myDiv").innerHTML = "<h1>Welcome to my Homepage</h1>";
+        }
+    </script>
+    <p>innerText: This property gets or sets the “rendered” text content of a node, excluding any HTML tags125. It
+        returns just the text, removing the spacing and the inner element tags3innerText is aware of styling and CSS4.
+    </p>
+    <button onclick="changeContent()">Click to check working of inner text</button>
+
+    <script>
+        function changeContent() {
+            document.getElementById("myDiv").innerText = "Welcome to my Homepage with innerText";
+        }
+    </script>
+</body>

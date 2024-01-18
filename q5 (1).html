@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Difference between
+        InnerHTML and InnerText
+    </title>
+</head>
+<style>
+    button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+
+<body style="text-align:center;">
+
+    <h1 style="color:rgb(41, 0, 128)">Difference between
+        InnerHTML and InnerText</h1>
+    <p>innerHTML: This property gets or sets the HTML content (including HTML tags) within an element. It returns the
+        text, including all spacing and inner element tags. It preserves the formatting of the text and all the extra
+        tags like etc. Using innerHTML allows you to see exactly what’s in the HTML markup contained within a
+        string, including elements like spacing, line breaks and formatting</p>
+
+    </p>
+
+    <div id="test">
+        <p>innerText: This property gets or sets the “rendered” text content of a node, excluding any HTML tags. It
+            returns just the text, removing the spacing and the inner element tags3innerText is aware of styling and
+            CSS4.<br>
+            The following element contains some
+
+            <codes>code</codes> and
+            <italic>some text</italic>.
+    </div>
+    <p></p>
+    <button onClick="innerHTMLFn()">
+        innerHTML
+    </button>
+    <button onClick="innerTextFn()">
+        innerText
+    </button>
+    <p id="op"></p>
+
+    <script>
+        function innerTextFn() {
+            let x = document.getElementById('test');
+            alert(x.innerText);
+        }
+
+        function innerHTMLFn() {
+            let x = document.getElementById('test');
+            alert(x.innerHTML);
+        }
+    </script>
+</body>
+
+</html>

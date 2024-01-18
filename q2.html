@@ -1,0 +1,58 @@
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        span.a {
+            display: inline;
+            /* the default for span */
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+
+        span.b {
+            display: inline-block;
+            width: 50px;
+            height: 40px;
+            padding: 5px;
+            border: 1px solid rgb(33, 149, 167);
+            background-color: rgb(0, 157, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The display Property</h1>
+
+    <h2>display: inline</h2>
+    <p>Inline: An element with display: inline doesn’t start on a new line and only occupies just the width it requires.
+        we can’t set the width or height of an inline element. It allows only the left and right sides of margins, not
+        the top, and bottom1</p>
+    <div>Sharda University is a private university in Knowledge Park III, Greater Noida, Uttar Pradesh. The
+        university has been accredited
+        <span class="a">Aliquam</span>
+        <span class="a">venenatis</span> with A+ Grade by the NAAC in 2022.
+    </div>
+
+    <h2>display: inline-block</h2>
+    <p>Inline-Block: An element with display: inline-block is formatted just like an inline element, where it doesn’t
+        start on a new line. However, you can set width and height values for an inline-block element. Also, the top and
+        bottom margins and paddings are respected with display: inline-block. It allows having a block-level appearance
+        while still being laid out inline with other elements3</p>
+    <div>Sharda University is an Indian private university in Knowledge Park III, Greater Noida, Uttar Pradesh. The
+        university has been accredited
+        <span class="b">Aliquam</span>
+        <span class="b">venenatis</span> with A+ Grade by the NAAC in 2022.
+    </div>
+
+
+
+</body>
+
+</html>
